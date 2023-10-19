@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.gr.dm</groupId>
+	<artifactId>dm</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>dm</name>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.6.RELEASE</version>
+	</parent>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<!-- Spring Boot -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-undertow</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+		</dependency>
+		
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+		
+		<dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+        </dependency>
+		
+		<dependency>
+		  <groupId>org.springframework.retry</groupId>
+		  <artifactId>spring-retry</artifactId>
+		</dependency>
+		
+		<dependency>
+	        <groupId>org.projectlombok</groupId>
+	        <artifactId>lombok</artifactId>
+	        <scope>provided</scope>
+	    </dependency>
+
+		<dependency>
+			<groupId>com.gr</groupId>
+			<artifactId>gr-notification-integration-lib</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>	    
+
+		<!-- Servlet API -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- MySQL API -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- Google Ads -->
+		<dependency>
+		    <groupId>com.google.api-ads</groupId>
+		    <artifactId>google-ads</artifactId>
+		    <version>22.0.0</version>
+		</dependency>
+		
+		<!-- Google Adwords -->		
+		<dependency>
+			<groupId>com.google.api-ads</groupId>
+			<artifactId>adwords-axis</artifactId>
+			<version>4.5.0</version>
+		</dependency>
+		
+<!--  	 Google Analytics -->
+  		<dependency>
+			<groupId>com.google.apis</groupId>
+			<artifactId>google-api-services-analyticsreporting</artifactId>
+			<version>v4-rev20200210-1.30.9</version>
+		</dependency>
+		
+		<dependency>
+	       <groupId>com.google.apis</groupId>
+    	   <artifactId>google-api-services-analytics</artifactId>
+      	   <version>v3-rev20190807-1.30.9</version>
+    	</dependency> 
+    	
+		<dependency>
+		    <groupId>com.google.analytics</groupId>
+		    <artifactId>google-analytics-data</artifactId>
+		    <version>0.23.0</version>
+		</dependency>    	
+
+		<!-- Fb Ads -->
+		<dependency>
+		    <groupId>com.facebook.business.sdk</groupId>
+		    <artifactId>facebook-java-business-sdk</artifactId>
+		    <version>14.0.0</version>
+		    <exclusions>
+				<exclusion>
+					<groupId>com.google.guava</groupId>
+					<artifactId>guava</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<!-- Bing Ads -->
+		<dependency>
+			<groupId>com.microsoft.bingads</groupId>
+			<artifactId>microsoft.bingads</artifactId>
+			<version>13.0.2</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.google.http-client</groupId>
+		    <artifactId>google-http-client-gson</artifactId>
+		    <version>1.34.2</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>3.13</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>3.13</version>
+		</dependency>
+		
+		
+		<dependency>
+		    <groupId>org.modelmapper</groupId>
+		    <artifactId>modelmapper</artifactId>
+		    <version>0.7.4</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.nimbusds</groupId>
+			<artifactId>nimbus-jose-jwt</artifactId>
+			<version>4.18</version>
+		</dependency>
+	</dependencies>
+	<repositories>
+		<repository>
+			<id>gr-internal</id>
+			<name>Internal jars</name>
+			<url>http://grisapp/mvnrepo/repository/gr-internal/</url>
+		</repository>
+	</repositories>
+	<build>
+		<finalName>dm</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifestEntries>
+							<Dependencies>org.hibernate, org.hibernate.validator,
+								org.javassist</Dependencies>
+						</manifestEntries>
+					</archive>
+
+					<webappDirectory>${env.JBOSS_HOME}/standalone/deployments/${project.build.finalName}.war</webappDirectory>
+					<warSourceExcludes>**/dom4j-1.6.1.jar</warSourceExcludes>
+					<warSourceIncludes>**/WEB-INF/, **/META-INF/</warSourceIncludes>
+					<webResources>
+                        <resource>
+                            <directory>${project.basedir}/src/main/webapp/dist</directory>
+                        </resource>
+                    </webResources>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>exploded</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<systemPropertyVariables>
+						<jboss.server.config.file.name>
+							standalone-full.xml
+						</jboss.server.config.file.name>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<profiles>
+        <profile>
+            <id>ng-build</id>
+
+            <!-- <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation> -->
+
+            <properties>
+                <env></env>
+                <npm.install.skip>false</npm.install.skip>
+            </properties>
+
+            <build>
+                <plugins>
+                    <!-- Plugin to execute command  "npm install" and "npm run build" inside /webapp directory -->
+                    <plugin>
+                        <groupId>com.github.eirslett</groupId>
+                        <artifactId>frontend-maven-plugin</artifactId>
+                        <version>1.6</version>
+                        <configuration>
+                            <workingDirectory>src/main/webapp</workingDirectory>
+                            <installDirectory>temp</installDirectory>
+                        </configuration>
+                        <executions>
+
+                            <!-- It will install nodejs and npm -->
+                            <execution>
+                                <id>install node and npm</id>
+                                <goals>
+                                    <goal>install-node-and-npm</goal>
+                                </goals>
+                                <configuration>
+                                    <nodeVersion>v8.11.3</nodeVersion>
+                                    <npmVersion>5.6.0</npmVersion>
+                                </configuration>
+                            </execution>
+
+                            <!-- It will execute command "npm install" inside "/webapp" directory -->
+                            <execution>
+                                <id>npm install</id>
+                                <goals>
+                                    <goal>npm</goal>
+                                </goals>
+                                <configuration>
+                                    <skip>${npm.install.skip}</skip>
+                                    <arguments>install</arguments>
+                                </configuration>
+                            </execution>
+							
+							<!-- It will execute command npm rebuild node-sass inside "/webapp" directory-->
+							<execution>
+                                <id>rebuild node-sass</id>
+                                <goals>
+                                    <goal>npm</goal>
+                                </goals>
+                                <configuration>
+                                    <skip>${npm.install.skip}</skip>
+                                    <arguments>rebuild node-sass</arguments>
+                                </configuration>
+                            </execution>
+
+                            <!-- It will execute command "npm build" inside "/webapp" directory to clean and create "/dist" directory-->
+                            <execution>
+                                <id>npm build</id>
+                                <goals>
+                                    <goal>npm</goal>
+                                </goals>
+                                <configuration>
+                                    <arguments>run build${env}</arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+    
+</project>

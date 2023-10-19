@@ -1,0 +1,42 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/src/main/webapp/dist
+/src/main/webapp/tmp
+/src/main/webapp/out-tsc
+
+# dependencies
+/src/main/webapp/node_modules
+
+# misc
+/src/main/webapp/.sass-cache
+/src/main/webapp/connect.lock
+/src/main/webapp/coverage
+/src/main/webapp/libpeerconnection.log
+/src/main/webapp/npm-debug.log
+/src/main/webapptestem.log
+/src/main/webapp/typings
+
+# e2e
+/src/main/webapp/e2e/*.js
+/src/main/webapp/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Java Project Files
+/target/
+/temp/
+.classpath
+.tern-project
+.settings/
+/.settings/
+.project
+/node_modules/
+/node/
+/bin/
+src/main/webapp/.idea/
+src/main/webapp/webapp.iml
+/.idea/
+# /src/main/webapp/src/environments/

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SOS Exception</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900,700,300%7COpen+Sans:400,300,600"
+        rel="stylesheet">
+</head>
+
+<body>
+    <table width="100%" style="border: 1px solid black">
+        <#if moduleName?has_content>
+            <tr>
+                <td style="width:200px; border: 1px solid black">
+                    <b>Module Name</b>
+                </td>
+                <td style="border: 1px solid black">
+                    ${moduleName}
+                </td>
+            </tr>
+        </#if>
+        <#if methodName?has_content>
+            <tr>
+                <td style="width:200px; border: 1px solid black">
+                    <b>Method Name</b>
+                </td>
+                <td style="border: 1px solid black">
+                    ${methodName}
+                </td>
+            </tr>
+        </#if>
+        <#if className?has_content>
+            <tr>
+                <td style="width:200px; border: 1px solid black">
+                    <b>Class Name</b>
+                    </td">
+                <td style="border: 1px solid black">
+                    ${className}
+                </td>
+            </tr>
+        </#if>
+        <tr>
+            <td style="width:200px; border: 1px solid black">
+                <b>Date/Time</b>
+            </td>
+            <td style="border: 1px solid black">
+                ${time}
+            </td>
+        </tr>        
+        <#if reason?has_content>
+            <tr>
+                <td style="width:200px; border: 1px solid black">
+                    <b>Reason</b>
+                    </td">
+                <td style="border: 1px solid black">
+                    ${reason}
+                </td>
+            </tr>
+        </#if>
+        <#if attemptNumber?has_content>
+            <tr>
+                <td style="width:200px; border: 1px solid black">
+                    <b>Attempt Number</b>
+                    </td">
+                <td style="border: 1px solid black">
+                    ${attemptNumber}
+                </td>
+            </tr>
+        </#if>
+        <#if campaignName?has_content>
+            <tr>
+                <td style="width:200px; border: 1px solid black">
+                    <b>Campaign Name</b>
+                    </td">
+                <td style="border: 1px solid black">
+                    ${campaignName}
+                </td>
+            </tr>
+        </#if>
+        <#if campaignId?has_content>
+            <tr>
+                <td style="width:200px; border: 1px solid black">
+                    <b>Campaign Id</b>
+                    </td">
+                <td style="border: 1px solid black">
+                    ${campaignId}
+                </td>
+            </tr>
+        </#if>
+         <#if campaignSource?has_content>
+            <tr>
+                <td style="width:200px; border: 1px solid black">
+                    <b>Campaign Source</b>
+                    </td">
+                <td style="border: 1px solid black">
+                    ${campaignSource}
+                </td>
+            </tr>
+        </#if>                                                                  
+        <tr>
+            <td style="width:200px; border: 1px solid black">
+                <b>Stack Trace</b>
+                </td">
+            <td style="border: 1px solid black">
+                <pre>${stackTrace}</pre>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

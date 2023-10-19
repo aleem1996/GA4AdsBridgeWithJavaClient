@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "global-rescue-1",
+  "private_key_id": "3a25866fed531d40e155178c6dc23f4df1abde45",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+kODwjQ8cUGNx\nlB2HffbX0L/P8C+HDid0z9ERiWnZyioSyjOJHPHN0vADubl/n7kG1tyXvJLvaikQ\n9qv94pBcX6Hw3GRCT+UZZ9EWLxJYDDKhlD56h+zSJUQFaJsFOKwEjia5lZ8VMu2I\n5+yGmjTn8xBlBWuN3H6N7cM4CX5mAa66JcsCvPTGwndQdf5fNupFCdxVkJqrd7Xt\n9wFRFAuV2IUVp11darmSZDgqBpBy+ksft+Tm+riP3Qs/CJIm6SRBI6ClBW2VbyN6\nZUGqBTmRdiihN8ldJM9Ljtew5YUqezf0Ekh6X5FU/I6wPwMg+YK1FgA3gShdPYcn\nbqpuVZjrAgMBAAECggEADXqa5njbvkFzXze+RPSkboxt3Mvc2L0oDkuaupZRHd3+\nTtjtfz/EXK4UWvcah0vpXvH4pWTpsbR9Fh2Ueb86PcZn4mz8THJxPnRI5jxLHF40\ngJhHOQx/NDf9kTJecKabCDFzzMGoAGxbP8lDwhuLLXLUUIjrHBwh+XD9U2vcfGN3\ntjVb7GhKKkHMjU0tAVX+v0dPTO74gFG+AgR4PV/ld//e8hpG1LKlyR76LIragXSd\n2xSHGGzoSNVnyZKgZDemGK5K4jXWilfSjfK+afbn+0hvu76JpO1GCsVyFbA5A74g\naudIXm3GCSehunHMmOQ+zVnhVAAmMJmpPmXucGofbQKBgQDxIBgxXnFhA2GH7J15\nDrwfREewvo+PU5VX3xz5e5UWhsz85z3rDvekQL+1TT9cCMFwfkEVbzTdKxooFAPJ\nVc7nzKL1xJysMOZ5gWIXC31Zrr8LqL0qLSUndfF0o1slKBASJGNKS9LJJceW0fk4\nYg/LY3TvynPaXpHeJzxmryqX/QKBgQDKUlaaA343JYt4PAPpU/V5D2PlKc6ujDKJ\nlt/ez0aGZESAJbqo9DYkb52lmTUoMWNHKp/OVpwKEufo4pg2T5hpARYiDdkSO8je\nq8MqzRGOTnAlmn89Rhf07Wr5O4bbYtzng8OwBoDT1042hJWJNahRXcvhy1LvIWNn\n1LI7cZmFBwKBgHn2buZBy/1zFVkIQNqjrlnuUoi+yqSHdYm9y80RSmbbhkIBwRrt\nNit5qL5OtVabAyUgZ1EtL8MS8ycEgKnM4lvy8RZ4/XpHPbyFyhS39g5vyihekFgN\n/7YG/TuvCQIxUnequiIxWgvuNRc/W9y+FRkeVF6Zu6Hfpc6FcBLMVTINAoGBAKKr\noy+/wTpruICamHaA5+xHIIV/oMsctAGGSkdmFok1kxIJw9PWTrXq/DDKR0AivXTZ\n45VOc7Vxz/6iOcnpI1zB397PjYmoge/u4EPIj+YAUREa8FT+x4JJZeowH1TDX2PR\nwIQGJoytHxicb3LbrpKFPMk15l+YU8mG7Sr4Qnv/AoGAcyGzeAFJwI1qEjCE7YfH\nyBP9x1e48HwG+Q60fQsVuVuJ9HM/gXSZFG7Mjsf811mJWfoUtYl9Eh0jueBtTk4G\n/fFlEcov0MXU79iepjwDE/ez/pAgaUBM6Rt+2e6PQJEGTEKffeEs8abqxv14oA9h\nEiT8lKuokGheciGdFGieiIM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "globalrescue@global-rescue-1.iam.gserviceaccount.com",
+  "client_id": "116783673687988903101",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/globalrescue%40global-rescue-1.iam.gserviceaccount.com"
+}
